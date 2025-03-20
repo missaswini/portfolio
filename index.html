@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pranesh S</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 250px;
+            background: #222;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .sidebar h1 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .sidebar p {
+            text-align: center;
+            font-size: 1rem;
+            color: #bbb;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 20px 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background: #555;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            margin-top: 10px;
+            background: #222;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .download-button:hover {
+            background: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                text-align: center;
+            }
+            .sidebar ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px 0;
+            }
+            .sidebar ul li {
+                margin: 5px;
+            }
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="photo.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Aswini.J</h1>
+        <p>Software Engineer</p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a <b>web development</b> expert who is passionate about creating dynamic and user-friendly websites...</p>
+        </section>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p>Madras University - B.Sc Computer Science</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>React</li>
+                <li>MERN</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>ML & AI</li>
+            </ul>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E Cart Website</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM Chatbot</a></li>
+            </ul>
+        </section>
+        <section id="resume" class="section">
+            <h2>Resume</h2>
+            <a href="file.pdf" target="_blank" class="download-button">Download CV</a>
+        </section>
+        <footer>
+            <p>&copy; 2025 Aswini.J</p>
+        </footer>
+    </div>
+</body>
+</html>
